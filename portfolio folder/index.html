@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Vincent Landicho P. — CS Student · Open for OJT</title>
+  <meta name="description" content="Portfolio of Vincent Landicho P., 4th-year BS Computer Science student at LSPU San Pablo, open for OJT." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="nav-name" href="#top" id="navName">Vincent Landicho <em>P.</em></a>
+      <nav class="nav-links" id="navLinks" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-tools">
+        <button class="text-btn" id="themeBtn" type="button">Dark</button>
+        <button class="text-btn menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="navLinks">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-text">
+        <p class="kicker reveal">Portfolio — <span id="year"></span></p>
+        <h1 class="hero-title reveal" style="--d:1">
+          Computer Science student building <em>practical</em> software.
+        </h1>
+        <p class="hero-lede reveal" style="--d:2" id="heroLede"></p>
+        <div class="hero-actions reveal" style="--d:3">
+          <a class="btn" href="#projects">View projects</a>
+          <a class="link" href="#contact">Get in touch</a>
+        </div>
+        <p class="hero-tip reveal" style="--d:4">Tip — grab my photo or any card and give it a toss.</p>
+      </div>
+      <figure class="hero-photo reveal" style="--d:2">
+        <img src="assets/profile.png" alt="Portrait of Vincent Landicho P." />
+        <figcaption>
+          <span id="heroName">Vincent Landicho P.</span>
+          <span class="status"><i></i><span id="heroStatus">Open for OJT</span></span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="section wrap" id="about">
+      <div class="section-label reveal"><span>01</span>About</div>
+      <div class="section-body">
+        <p class="big-lede reveal">Hi, I'm Vincent — a CS student who likes turning ideas into <em>working</em> software.</p>
+        <dl class="stats" id="stats"></dl>
+        <p class="about-text reveal" style="--d:1" id="aboutText"></p>
+        <div class="two-col">
+          <div class="reveal">
+            <h3>What I bring to your team</h3>
+            <ul class="dash" id="strengths"></ul>
+          </div>
+          <div class="reveal" style="--d:1">
+            <h3>Education</h3>
+            <dl class="facts" id="education"></dl>
+            <h3>Looking for</h3>
+            <p id="lookingFor"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="projects">
+      <div class="section-label reveal"><span>02</span>Projects</div>
+      <div class="section-body">
+        <div id="featured"></div>
+        <div class="project-grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="skills">
+      <div class="section-label reveal"><span>03</span>Skills</div>
+      <div class="section-body">
+        <p class="big-lede reveal">Languages I've used in coursework and projects, with an honest self-rating of how comfortable I am today.</p>
+        <div class="skills" id="skillList"></div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="credentials">
+      <div class="section-label reveal"><span>04</span>Credentials</div>
+      <div class="section-body">
+        <p class="big-lede reveal" id="credIntro"></p>
+        <ol class="creds" id="credList"></ol>
+        <p class="reveal" id="credlyLink"></p>
+      </div>
+    </section>
+
+    <section class="section wrap contact" id="contact">
+      <div class="section-label reveal"><span>05</span>Contact</div>
+      <div class="section-body">
+        <h2 class="contact-title reveal">Let's work <em>together.</em></h2>
+        <p class="big-lede reveal" style="--d:1">I'm currently looking for an OJT placement. If your team has a spot, I'd be glad to talk about how I can help.</p>
+        <dl class="facts contact-facts reveal" style="--d:2" id="contactFacts"></dl>
+        <div class="hero-actions reveal" style="--d:3" id="contactActions"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <span id="footName">Vincent Landicho P.</span>
+    <span>© <span id="footYear"></span> · Built with HTML, CSS &amp; JavaScript</span>
+    <a class="link" href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
